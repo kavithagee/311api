@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  needs_recoding: false
+  longitude: 9.99
+  latitude: 9.99
+  category: MyString
+  request_details: MyString
+  source: MyString
+  address: MyString
+  request_type: MyString
+  status: MyString
+  updated: 2014-04-30 20:40:35
+  media_url: MyString
+  neighborhood: MyString
+  case_id: 1
+  closed: 2014-04-30 20:40:35
+  supervisor_district: 1
+  responsible_agency: MyString
+  opened: 2014-04-30 20:40:35
+
+two:
+  needs_recoding: false
+  longitude: 9.99
+  latitude: 9.99
+  category: MyString
+  request_details: MyString
+  source: MyString
+  address: MyString
+  request_type: MyString
+  status: MyString
+  updated: 2014-04-30 20:40:35
+  media_url: MyString
+  neighborhood: MyString
+  case_id: 1
+  closed: 2014-04-30 20:40:35
+  supervisor_district: 1
+  responsible_agency: MyString
+  opened: 2014-04-30 20:40:35
