@@ -2,8 +2,8 @@ class CreateCase311s < ActiveRecord::Migration
   def change
     create_table :case311s do |t|
       t.boolean :needs_recoding
-      t.decimal :longitude
-      t.decimal :latitude
+      t.decimal :longitude, :precision=>64, :scale=>30
+      t.decimal :latitude, :precision=>64, :scale=>30
       t.string :category
       t.string :request_details
       t.string :source
