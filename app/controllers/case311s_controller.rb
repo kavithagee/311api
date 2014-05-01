@@ -8,7 +8,7 @@ class Case311sController < ApplicationController
   	query = query.source(params[:source]) unless params[:source].blank?
   	if !params[:near].blank?
   		lat,long = params[:near].split(',')
-  		query = query.near(lat, long) unless lat.blank? || long.blank?
+  		query = query.near(lat, long, params[:radius]) unless lat.blank? || long.blank?
   	end
   	
 

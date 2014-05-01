@@ -17,8 +17,9 @@ class Case311 < ActiveRecord::Base
 		where("lower(source) = lower(?)", src)
 	end
 
-	def self.near(lat, long)
-		within(0.15, :origin => [lat, long])
+	def self.near(lat, long, radius)
+		radius = 5 if radius.blank?
+		within(radius, :origin => [lat, long])
 	end
 
 end
