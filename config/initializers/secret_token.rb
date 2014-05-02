@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Kavitha311::Application.config.secret_token = ENV['SECRET_TOKEN']
+Kavitha311::Application.config.secret_key_base = ENV['SECRET_TOKEN']
