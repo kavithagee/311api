@@ -1,5 +1,7 @@
 class Case311 < ActiveRecord::Base
-	  acts_as_mappable :default_units => :miles, 
+	validates :id, presence: true
+
+	acts_as_mappable :default_units => :miles, 
                    :default_formula => :sphere, 
                    :distance_field_name => :distance,
                    :lat_column_name => :latitude,
@@ -10,7 +12,7 @@ class Case311 < ActiveRecord::Base
 	end
 
 	def self.since(timestamp)
-		where("strftime('%s', opened) >= ?", timestamp)
+		where("UNIX_TIMESTAMP(opened) >= ?", timestamp)
 	end
 
 	def self.source(src)

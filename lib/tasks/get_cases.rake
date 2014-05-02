@@ -1,6 +1,6 @@
 require 'net/http'
 
-desc "importing case data from 311"
+desc "Importing case data from 311"
 task :get_cases => :environment do
   uri =  URI("http://data.sfgov.org/resource/vw6y-z8j6.json")
   request = Net::HTTP.get(uri)
