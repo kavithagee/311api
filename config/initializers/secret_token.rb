@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Kavitha311::Application.config.secret_key_base = ENV['SECRET_TOKEN']
+secret = Rails.env.production? ? ENV['SECRET_TOKEN'] : "abc068d67a8c015c8cb06017e683d92f93486b7557bb09437aab0e57112b4e401f0bde6fc92a97effa5b809266e276209217fe637002dacb9da07f8649fbfe8c"
+Kavitha311::Application.config.secret_key_base = secret
