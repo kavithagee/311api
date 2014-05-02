@@ -1,2 +1,27 @@
 <h1>Kavitha Case311 JSON APIs</h1>
-<p>Help</p>
+<b>This page returns a subset of 311 cases from SFGov.org in JSON format.<br/> The following are quick links that represent all the requested filters.</b><br/><br/><br/>
+
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json</a><br/>
+ # Returns all cases<br/><br/>
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?since=1398465719" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?since=1398465719</a><br/>
+ # Returns cases opened since UNIX timestamp 1398465719<br/><br/>
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?status=open" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?status=open</a><br/>
+ # Returns cases that are in open state.<br/><br/>
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?source=Voice%20In" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?source=Voice%20In</a><br/>
+ # Returns cases that were sourced through "Voice In"<br/><br/>
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48</a><br/>
+ # Returns cases that were created within 5 mile radius of lat=37.77 and lng=-122.48<br/><br/>
+
+<p>In addition to Latitude and longitude, you can also specify radius value</p>
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48&radius=1" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48&radius=1</a><br/>
+# Returns cases that were created within 1 mile radius of lat=37.77 and lng=-122.48<br/><br/>
+
+<a href="http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48&status=open&source=Voice%20In" target="_BLANK">http://quiet-bayou-6904.herokuapp.com/cases.json?near=37.77,-122.48&status=open&source=Voice%20In</a><br/>
+ # API endpoint should be able to take any combination of GET params.<br/><br/>
+
+
