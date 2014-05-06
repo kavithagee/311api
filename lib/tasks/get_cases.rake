@@ -6,6 +6,7 @@ task :get_cases => :environment do
   request = Net::HTTP.get(uri)
   data = JSON.parse(request)
   data.each do |record|
+    next if record.blank? 
   	c = Case311.find_or_initialize_by_id(record["case_id"])
     c.needs_recoding = record["point"]["needs_recoding"]
     c.longitude = record["point"]["longitude"]
