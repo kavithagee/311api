@@ -2,9 +2,6 @@ Rails practice repo
 
 
 - API for 311 cases in SF
-
 - Has a rake function to fetch cases from SF gov server
-
-_ JSON reponse
-
+- JSON reponse
 - has filters such as date, lat & long, radius etc.
